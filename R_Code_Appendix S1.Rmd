@@ -31,7 +31,9 @@ library(reticulate)
 sessionInfo()
 ```
 
-### Load sites
+### Load data
+The data used is from [King County Freshwater Benthic Macroinvertebrate Sampling and Analysis Plan](https://pugetsoundstreambenthos.org/). The data citation is:
+King County. 2020. King County Freshwater Benthic Macroinvertebrate Sampling and Analysis Plan. Prepared by Kate Macneale, Liora Llewellyn, and Beth Sosik. Water and Land Resources Division. Seattle, Washington. https://pugetsoundstreambenthos.org/
 ```{r, error=FALSE, message=FALSE, comment=FALSE , eval=FALSE}
 puget <- read_csv('Puget_Data.csv')
 sites <- puget %>% 
