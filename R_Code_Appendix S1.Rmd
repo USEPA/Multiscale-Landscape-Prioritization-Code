@@ -35,13 +35,9 @@ sessionInfo()
 The data used is from [King County Freshwater Benthic Macroinvertebrate Sampling and Analysis Plan](https://pugetsoundstreambenthos.org/). The data citation is:
 King County. 2020. King County Freshwater Benthic Macroinvertebrate Sampling and Analysis Plan. Prepared by Kate Macneale, Liora Llewellyn, and Beth Sosik. Water and Land Resources Division. Seattle, Washington. https://pugetsoundstreambenthos.org/
 ```{r, error=FALSE, message=FALSE, comment=FALSE , eval=FALSE}
-puget <- read_csv('Puget_Data.csv')
-sites <- puget %>% 
+sites <- read_csv('Multiscale Framework King County and Puget Lowland data.csv')
+sites <- sites %>% 
   dplyr::select(SITE_ID = Location_ID, Latitude, Longitude, COMID)
-kc <- read_csv('KC_Data.csv')
-kc <- kc %>% 
-  dplyr::select(SITE_ID = Location_ID, Latitude, Longitude, COMID)
-sites <- rbind(puget, kc)
 sites <- sites %>%
   st_as_sf(coords = c("Longitude", "Latitude"), crs = 4269, remove = FALSE)
 ```
