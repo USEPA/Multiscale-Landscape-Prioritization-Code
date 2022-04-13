@@ -2,7 +2,7 @@
 title: "Appendix S1"
 author: "Marc Weber"
 date: "1/6/2022"
-output: word_document
+output: md_document
 ---
 
 ```{r setup, include=FALSE}
