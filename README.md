@@ -1,4 +1,4 @@
-# Multiscale-Landscape-Prioritizationion-Code 
+# Multiscale-Landscape-Prioritization-Code 
 
 ## Description: 
 This repository contains the R code used in the paper 'A multiscale landscape approach for prioritizing river and stream protection and restoration actions'.  The R code is containted as an R Markdown file in this repository called 'R_Code.Rmd'.
